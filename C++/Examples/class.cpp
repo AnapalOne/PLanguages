@@ -39,6 +39,9 @@ int main() {
     cout << "\n\n";
 
     cout << "inputClass:\n";
-    ageClass.printAge(59);
+    cout << "Enter your age: ";
+    int a;
+    cin >> a;
+    ageClass.printAge(a);
     cout << "\n\n";
 }
