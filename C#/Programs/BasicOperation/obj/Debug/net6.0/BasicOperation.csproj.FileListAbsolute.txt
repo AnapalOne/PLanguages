@@ -1,0 +1,15 @@
+/home/anapal/Coding/PLanguages/C#/Programs/BasicOperation/bin/Debug/net6.0/BasicOperation
+/home/anapal/Coding/PLanguages/C#/Programs/BasicOperation/bin/Debug/net6.0/BasicOperation.deps.json
+/home/anapal/Coding/PLanguages/C#/Programs/BasicOperation/bin/Debug/net6.0/BasicOperation.runtimeconfig.json
+/home/anapal/Coding/PLanguages/C#/Programs/BasicOperation/bin/Debug/net6.0/BasicOperation.dll
+/home/anapal/Coding/PLanguages/C#/Programs/BasicOperation/bin/Debug/net6.0/ref/BasicOperation.dll
+/home/anapal/Coding/PLanguages/C#/Programs/BasicOperation/bin/Debug/net6.0/BasicOperation.pdb
+/home/anapal/Coding/PLanguages/C#/Programs/BasicOperation/obj/Debug/net6.0/BasicOperation.csproj.AssemblyReference.cache
+/home/anapal/Coding/PLanguages/C#/Programs/BasicOperation/obj/Debug/net6.0/BasicOperation.GeneratedMSBuildEditorConfig.editorconfig
+/home/anapal/Coding/PLanguages/C#/Programs/BasicOperation/obj/Debug/net6.0/BasicOperation.AssemblyInfoInputs.cache
+/home/anapal/Coding/PLanguages/C#/Programs/BasicOperation/obj/Debug/net6.0/BasicOperation.AssemblyInfo.cs
+/home/anapal/Coding/PLanguages/C#/Programs/BasicOperation/obj/Debug/net6.0/BasicOperation.csproj.CoreCompileInputs.cache
+/home/anapal/Coding/PLanguages/C#/Programs/BasicOperation/obj/Debug/net6.0/BasicOperation.dll
+/home/anapal/Coding/PLanguages/C#/Programs/BasicOperation/obj/Debug/net6.0/ref/BasicOperation.dll
+/home/anapal/Coding/PLanguages/C#/Programs/BasicOperation/obj/Debug/net6.0/BasicOperation.pdb
+/home/anapal/Coding/PLanguages/C#/Programs/BasicOperation/obj/Debug/net6.0/BasicOperation.genruntimeconfig.cache

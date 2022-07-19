@@ -1,0 +1,15 @@
+/home/anapal/Coding/PLanguages/C#/How to/helloworld/bin/Debug/net6.0/helloworld
+/home/anapal/Coding/PLanguages/C#/How to/helloworld/bin/Debug/net6.0/helloworld.deps.json
+/home/anapal/Coding/PLanguages/C#/How to/helloworld/bin/Debug/net6.0/helloworld.runtimeconfig.json
+/home/anapal/Coding/PLanguages/C#/How to/helloworld/bin/Debug/net6.0/helloworld.dll
+/home/anapal/Coding/PLanguages/C#/How to/helloworld/bin/Debug/net6.0/ref/helloworld.dll
+/home/anapal/Coding/PLanguages/C#/How to/helloworld/bin/Debug/net6.0/helloworld.pdb
+/home/anapal/Coding/PLanguages/C#/How to/helloworld/obj/Debug/net6.0/helloworld.csproj.AssemblyReference.cache
+/home/anapal/Coding/PLanguages/C#/How to/helloworld/obj/Debug/net6.0/helloworld.GeneratedMSBuildEditorConfig.editorconfig
+/home/anapal/Coding/PLanguages/C#/How to/helloworld/obj/Debug/net6.0/helloworld.AssemblyInfoInputs.cache
+/home/anapal/Coding/PLanguages/C#/How to/helloworld/obj/Debug/net6.0/helloworld.AssemblyInfo.cs
+/home/anapal/Coding/PLanguages/C#/How to/helloworld/obj/Debug/net6.0/helloworld.csproj.CoreCompileInputs.cache
+/home/anapal/Coding/PLanguages/C#/How to/helloworld/obj/Debug/net6.0/helloworld.dll
+/home/anapal/Coding/PLanguages/C#/How to/helloworld/obj/Debug/net6.0/ref/helloworld.dll
+/home/anapal/Coding/PLanguages/C#/How to/helloworld/obj/Debug/net6.0/helloworld.pdb
+/home/anapal/Coding/PLanguages/C#/How to/helloworld/obj/Debug/net6.0/helloworld.genruntimeconfig.cache

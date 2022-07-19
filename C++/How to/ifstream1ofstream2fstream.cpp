@@ -8,7 +8,6 @@ fstream is to both READ and WRITE a file
 
 #include <iostream>
 #include <fstream>
-#include <stdio.h>
 using namespace std;
 
 int main() {
@@ -33,6 +32,4 @@ int main() {
      }
      
      fs.close();
-     return 0;
-     system("Pause");
 }

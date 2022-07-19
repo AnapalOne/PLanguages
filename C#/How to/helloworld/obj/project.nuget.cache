@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "CIuk/mOLd7VATknGdunn0C63zdJnzgeF0OnybO/PXRJN2/oZqn0hJNY8v5cqlm727xCL/LGl8TEfni+jhRsZFQ==",
+  "success": true,
+  "projectFilePath": "/home/anapal/Coding/PLanguages/C#/How to/helloworld/helloworld.csproj",
+  "expectedPackageFiles": [
+    "/home/anapal/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.6/microsoft.aspnetcore.app.ref.6.0.6.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "dQ23CO+Bj8Lw979we3+scRs48UZu9BDZraSCOV1fVHEfkSTLcGrs8rl3eyzBut5fD+Nzyl9VaVGG75KWLJKh6A==",
+  "success": true,
+  "projectFilePath": "/home/anapal/Coding/PLanguages/C#/Programs/BasicOperation/BasicOperation.csproj",
+  "expectedPackageFiles": [
+    "/home/anapal/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.6/microsoft.aspnetcore.app.ref.6.0.6.nupkg.sha512"
+  ],
+  "logs": []
+}
