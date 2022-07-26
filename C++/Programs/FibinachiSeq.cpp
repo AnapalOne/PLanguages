@@ -2,11 +2,11 @@
 using namespace std;
 
 int main() {
-    cout << "this program fibinachi whatever spelling idc\n";
-    cout << "factors in the fibinacci sequence: ";
+    cout << "this program fibinachi whatever spelling idc";
     
     int n, x1 = 0, y1 = 1, z1;
         //for fibinachi
+    cout << endl << "factors in the fibinacci sequence: ";
     cin >> n;
     cout << "Sequence: ";
    for(int i = 1;i <= n; ++i) { 
