@@ -4,4 +4,4 @@
 *.exe
 /.vscode
 tempCodeRunnerFile.*
-./Python/__pycache__
+/Python/__pycache__/
