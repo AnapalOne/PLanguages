@@ -23,7 +23,7 @@ int main() {
     cin >> n;
     cout << "Sequence: ";
     while(z < n) {
-        cout << z2 << " ";
+        cout << x2 << " ";
 
         z2 = x2 + y2;
         y2 = x2;
@@ -31,4 +31,5 @@ int main() {
 
         z++;
     }
+    cout << endl;
 }
