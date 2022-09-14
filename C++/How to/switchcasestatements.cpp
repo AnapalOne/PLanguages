@@ -33,7 +33,7 @@ int main() {
 
             cout << "Please enter two numbers:";
             cin >> fuck >> you;
-            if(fuck == 0 || you == 0) {
+            if(you == 0) {
                 cout << "Cannot divide by zero." << endl;
                 break;
             }

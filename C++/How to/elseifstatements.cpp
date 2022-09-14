@@ -17,7 +17,7 @@ int main() {
         sum = firstnumber + secondnumber;
 
         cout << firstnumber << " + " << secondnumber << " = " << sum << endl;
-        system("pause");
+        system("sleep 5");
         return 0;
     }
 
@@ -29,7 +29,7 @@ int main() {
         sum = firstnumber - secondnumber;
 
         cout << firstnumber << " - " << secondnumber << " = " << sum << endl;
-        system("pause");
+        system("sleep 5");
         return 0;
     }
 
@@ -41,14 +41,14 @@ int main() {
         sum = firstnumber * secondnumber;
 
         cout << firstnumber << " * " << secondnumber << " = " << sum << endl;
-        system("pause");
+        system("sleep 5");
         return 0;
     } 
 
     else {
 
         cout << "That is not a valid operation." << endl;
-        system("pause");
+        system("sleep 5");
         return 0;
     }
 }
