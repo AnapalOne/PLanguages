@@ -27,6 +27,19 @@ void salaryRaise () {
 	cout << "Your new salary is " << raisedSalary << " and the raise is " << raise << "%.";
 }
 
+void averageScore () {
+	int midterm, final, aveScore;
+
+	cout << "Enter the midterm score: ";
+	cin >> midterm;
+
+	cout << "Enter the final score: ";
+	cin >> final;
+
+	aveScore = (final + midterm) / 2;
+	cout << "Your average score for the year is: " << aveScore;
+}
+
 int main () {
 	int num;
 	char choice;
@@ -35,6 +48,7 @@ int main () {
 		cout << "What example would you like to run?" << endl;
 		cout << "[1] Gas Milage" << endl;
 		cout << "[2] Salary Raise" << endl;
+		cout << "[3] Average Score" << endl;
 		cin >> num;
 		
 		switch(num) {
@@ -47,6 +61,11 @@ int main () {
 				cout << "     --- Salary Raise --- " << endl;
 				system("sleep 3");
 				salaryRaise();
+				break;
+			case 3:
+				cout << "     --- Salary Raise --- " << endl;
+				system("sleep 3");
+				averageScore();
 				break;
 		}
 

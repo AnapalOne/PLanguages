@@ -6,7 +6,7 @@
 
 using namespace std;
 int main() {
-    int h, w, bmi;
+    float h, w, bmi;
     string number;
 
     cout << "-------------------------------\n" << "This program will compute the Body Mass Index (BMI) based\non the height (cm) and weight (kg) provided by the user.\n" << "-------------------------------\n";
@@ -33,6 +33,7 @@ int main() {
     else {
         printf("Results: Underweight");
     }
-    system("pause");
+
+    std::cout << endl << bmi;
     return 0;
 }
