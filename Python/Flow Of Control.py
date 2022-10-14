@@ -2,8 +2,8 @@ print("This program will compute the Body Mass Index (BMI) based on the height (
 print("-------------------------------")
 
 #Input
-h = int(input("Please Input Height (cm): "))
-w = int(input("Please Input Weight (kg): "))
+h = float(input("Please Input Height (cm): "))
+w = float(input("Please Input Weight (kg): "))
 print ("-------------------------------")
 
 #Operations
@@ -17,3 +17,5 @@ elif bmi > 17.5:
     print("Results: Normal")
 else:
     print("Results: Underweight")
+
+print(bmi)

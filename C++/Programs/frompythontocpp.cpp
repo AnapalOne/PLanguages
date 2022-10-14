@@ -19,7 +19,7 @@ int main() {
     getline(cin,number);
     stringstream(number) >> w;
     
-    bmi = (w / 100) / (h * h);
+    bmi = ( w / (h * h) ) / 100;
     
     if(bmi > 29) {
         printf("Results: Obese");
