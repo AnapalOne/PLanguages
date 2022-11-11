@@ -1,0 +1,58 @@
+/*header thing*/
+#header {
+	background-color: white;
+	border: 5px solid black;
+	border-radius: 1em;
+	width: 600px;
+	margin: 25px auto;
+
+	text-align: center;
+}
+
+.question-answer {
+	background-color: lightgreen;
+	border: 5px solid black;
+	border-radius: 1em;
+
+	padding: 0 20px;
+	margin: 20px 0;
+}
+
+.question-answer p {
+	margin-left: 50px;
+}
+
+/*footer where copyright and details are*/
+#footer {
+	clear: both;
+	background-color: black;
+	border-radius: 1em;
+	color: white;
+	height: 75px;
+}
+
+#footer-left {
+	float: left;
+	margin-left: 30px;
+	padding: 10px;
+}
+
+#footer-left img {
+	float: left;
+}
+
+#footer-left p {
+	float: right; 
+	padding-left: 6px;
+}
+
+#footer-right {
+	float: right;
+	margin-right: 30px;
+	padding: 10px;
+}
+
+#footer-right p img {
+	float: right;
+	margin: 0 10px;
+}

@@ -1,0 +1,69 @@
+html {
+	scroll-behavior: smooth;
+  	height: 100%;
+}
+
+body {
+	background-color: green;
+	background: url("../../pics/bgcannabis.jpg");
+  	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	
+  	height: 100%;
+}
+
+#placeholder-text {
+	text-align: center;
+	vertical-align: middle;
+	color: white;
+}
+
+/*main div element*/
+#content {
+	margin: 10px;
+}
+
+#content-box {
+	background-color: rgba(17, 138, 17, 0.8);
+	border: 5px solid black;
+	border-radius: 2em;
+	width: 98%;
+	margin: 10px auto;
+}
+
+/*navigation bar css*/
+#topbar {
+	background-color: lightgreen;
+	border: 4px solid black;
+	border-radius: 1.2em;
+	
+	position: fixed;
+	left: 20px;
+	bottom: 3%;
+	z-index: 100;
+	height: 40px;
+	display: flex;
+}
+
+#topbar a {
+	padding: 14px 16px;
+
+	color: black;
+	text-align: center;
+	text-decoration: none;
+	font-size: 13px;
+}
+
+#topbar a:hover {
+	background-color: #ddd;
+	border-radius: 1.2em;
+	color: black;
+}
+
+#topbar a:active {
+	background-color: #3248af;
+	border-radius: 1.2em;
+	color: white;
+}

@@ -1,0 +1,78 @@
+/*header thing*/
+#header {
+	background-color: white;
+	border: 5px solid black;
+	border-radius: 1em;
+	width: 600px;
+	margin: 25px auto;
+
+	text-align: center;
+}
+
+#note {
+	border: 5px solid black;
+	border-radius: 1em;
+	width: 450px;
+	height: 50px;
+	margin: 15px auto;
+	background-color: lightgreen;
+
+	text-align: center;
+}
+
+#donation-link-1 {
+	border: 5px solid black;
+	border-radius: 1em;
+	width: 40%;
+	margin: 15px;
+	padding: 30px;
+	background-color: lightgreen;
+
+	float: left;
+}
+
+#donation-link-2 {
+	border: 5px solid black;
+	border-radius: 1em;
+	width: 40%;
+	margin: 15px;
+	padding: 30px;
+	background-color: lightgreen;
+
+	float: right;
+}
+
+/*footer where copyright and details are*/
+#footer {
+	clear: both;
+	background-color: black;
+	border-radius: 1em;
+	color: white;
+	height: 75px;
+}
+
+#footer-left {
+	float: left;
+	margin-left: 30px;
+	padding: 10px;
+}
+
+#footer-left img {
+	float: left;
+}
+
+#footer-left p {
+	float: right; 
+	padding-left: 6px;
+}
+
+#footer-right {
+	float: right;
+	margin-right: 30px;
+	padding: 10px;
+}
+
+#footer-right p img {
+	float: right;
+	margin: 0 10px;
+}

@@ -1,0 +1,96 @@
+/*content div clock*/
+div#container-of-content {
+	float: right;
+	margin-right: 15px;
+	width: 80%;
+}
+
+div#content-of-content {
+	background-color: white;
+	border: 5px solid black;
+	border-radius: 1em;
+
+	height: 75px;
+}
+
+div#name-of-content-of-content {
+	float: left;
+	margin-left: 25px;
+}
+
+div#desc-of-content-of-content {
+	float: left;
+	margin-top: 10px;
+}
+
+/*websites section*/
+#websites {
+	border: 5px solid black;
+	border-radius: 1em;
+	background-color: lightgreen;
+
+	margin-top: 15px;
+}
+
+#websites li {
+ 	margin: 10px 0;
+}
+
+#back-to-top {
+	background-color: lightgreen;
+	border: 2px solid black;
+	border-radius: 1em;
+	text-align: center;
+	padding: 5px;
+	margin: 5px auto;
+	width: 100px;
+	height: 20px;
+}
+
+/* advertisments */
+.advertisements {
+	border: 2px dashed black;
+	background-color: rgba(0, 0, 0, 0.3);
+	box-sizing: border-box;
+	height: 500px;
+	margin: 25px;
+	float: left;
+	width: 15%;
+}
+
+/*footer where copyright and details are*/
+#footer {
+	clear: both;
+	margin-left: 19%;
+	margin-right: 1%;
+	background-color: black;
+	border-radius: 1em;
+	color: white;
+	height: 75px;
+}
+
+#footer-left {
+	float: left;
+	margin-left: 30px;
+	padding: 10px;
+}
+
+#footer-left img {
+	float: left;
+}
+
+#footer-left p {
+	float: right; 
+	padding-left: 6px;
+}
+
+#footer-right {
+	float: right;
+	margin-right: 30px;
+	padding: 10px;
+}
+
+#footer-right p img {
+	float: right;
+	margin: 0 10px;
+}
