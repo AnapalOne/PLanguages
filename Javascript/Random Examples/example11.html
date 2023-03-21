@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<script>
+			var grade = parseInt(prompt("Enter grade:"));
+
+			gradeCompute(grade);
+
+			function gradeCompute (num) {
+				if (num > 94) {
+					alert("Grade: A");
+				} else if (num > 89) {
+					alert("Grade: B");
+				} else if (num > 84) {
+					alert("Grade: C");
+				} else if (num > 79) {
+					alert("Grade: D");
+				} else if (num > 74) {
+					alert("Grade: E");
+				} else {
+					alert("Grade: F");
+				}
+			}
+
+			function gradeCompute_switch (num) {
+				switch (true) {
+					case num > 95: 
+						alert("Grade: A");
+						break;
+					case num > 90: 
+						alert("Grade: B");
+						break;
+					case num > 85:
+						alert("Grade: C");
+						break;
+					case num > 80:
+						alert("Grade: D");
+						break;
+					case num > 74:
+						alert("Grade: E");
+						break;
+					default:
+						alert("Grade: F");
+						break;
+				}
+			}
+		</script>	
+	</body> 
+</html>

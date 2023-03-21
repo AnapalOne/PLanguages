@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<<html>
+	<body>
+		<img id="image" onclick="changeImage()" src="../pics/1.jpg" width="100" height="100" style="border:5px solid black">
+		
+		<script>
+			var i = true;
+
+			function changeImage() {
+				if (i) {
+					image.src='../pics/2.png';
+					i = false
+				} else {
+					image.src='../pics/1.jpg';
+					i = true
+				}
+			}
+		</script>
+	</body>
+</html>

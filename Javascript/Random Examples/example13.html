@@ -1,0 +1,37 @@
+<!-- <!DOCTYPE html>
+<html>
+	<body>
+		<script type="text/javascript">
+			alert("This page will accept 5 inputs and outout the sum of those inputs.");
+			var sum = 0;
+
+			for (var i = 0; i > 5; i++) {
+				var x = parseInt(prompt("Enter number:"));
+				sum += x;
+			}
+
+			alert("The sum is " + sum);
+		</script>
+	</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+	<body>
+		<script type="text/javascript">
+			function getSum(a){
+				sum = 0;
+			
+				for (var i = 0; i<=a; i++) {
+					sum = sum + i;
+				}
+		
+				return sum;
+			}
+
+			var number = parseFloat(prompt("Input number: "));			
+			x = getSum(number);
+			window.alert(x);
+		</script>
+	</body>
+</html>

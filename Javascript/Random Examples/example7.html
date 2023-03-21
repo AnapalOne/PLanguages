@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<body id="dBody" onload="changeColor()">
+		<h1>Changing Color for each load</h1>
+		
+		<script>
+			function changeColor() {
+				/* randomize generation of numbers from 0 to 255*/
+					var red = Math.random() * 255;
+					var green = Math.random() * 255;
+					var blue = Math.random() * 255;
+					
+					var dColor = "rgb(" + red + ","+green+","+blue+")";
+					dBody.style.backgroundColor = dColor;
+			}
+
+			setInterval(changeColor,2000);
+		</script>
+	</body>
+</html>

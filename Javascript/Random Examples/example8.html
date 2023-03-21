@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<script type="text/javascript">
+			let g1 = prompt("Enter grade: ");
+			let g2 = prompt("Enter grade: ");
+			let g3 = prompt("Enter grade: ");
+			let g4 = prompt("Enter grade: ");
+			let g5 = prompt("Enter grade: ");
+
+			let avgGrade = (parseInt(g1) + parseInt(g2) + parseInt(g3) + parseInt(g4) + parseInt(g5)) / 5;
+			document.write(avgGrade + "<br>");
+
+			if (avgGrade >= 75){
+				document.write("Passed!");
+			} else {
+				document.write("Failed!")
+			}
+		</script>
+	</body>
+</html>

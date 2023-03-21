@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<script type="text/javascript">
+			function gradeAvg () {
+				var x = 0, y = 0;
+				
+				for (var i = 1; i <= 6; i++) {
+					x = prompt("Enter score #" + i + ":");
+					y += parseFloat(x);
+				}
+
+				return parseFloat(y / 6);
+			}
+
+			alert("This page accept 6 scores and compute the average of it.");
+			var avg = gradeAvg();
+			alert("The average score is " + avg);
+		</script>
+	</body>
+</html>

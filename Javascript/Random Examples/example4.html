@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+	
+	<body>
+		<button onclick="pi_times()">pi multiply</button>
+
+		<script type="text/javascript">
+			function pi_times() {
+				let input = prompt("Enter a number:");
+
+				let product = input * Math.PI;
+
+				if (isNaN(product)) {
+					 confirm("Input is not a number! Click the button again.");
+					 return;
+				}
+	
+				alert("π multiplied by " + input + " is " + product.toFixed(2) + ".");
+				document.getElementById("multiply").innerHTML = "π multiplied by " + input + " is " + product.toFixed(2) + "."; // long way
+				multiply_short.innerHTML = "π multiplied by " + input + " is " + product + "."; // short way
+			}
+		</script>
+
+		<p id="multiply"></p>
+		<p id="multiply_short"></p>
+	</body>
+</html>

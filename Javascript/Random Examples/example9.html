@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<body onload="sum()">
+		<script type="text/javascript">
+			function sum() {
+				const NUMBERS = [];
+				var sum = 0;
+				let arrLength = parseInt(prompt("How many numbers? ", 0));
+
+				for (var i = 0; i < arrLength; i++) {
+					var pushNum = parseInt(prompt("Enter number: "));
+					NUMBERS.push(pushNum);
+				}
+
+				for (var i = 0; i < NUMBERS.length; i++) {
+					sum += NUMBERS[i];
+				}
+
+				document.write(sum);
+			}
+		</script>	
+	</body>
+</html>
