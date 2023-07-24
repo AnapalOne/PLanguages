@@ -18,6 +18,6 @@ int main() {
         neg_or_pos();
     }
 
-    cout << "\nThe total sum of all numbers equate to: " << sum;
+    cout << "\nThe total sum of all numbers equate to: " << sum << endl;
     return 0;
 }
