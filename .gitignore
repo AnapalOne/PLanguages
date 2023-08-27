@@ -5,3 +5,5 @@
 /.vscode
 tempCodeRunnerFile.*
 /Python/__pycache__/
+*.out
+*.class
