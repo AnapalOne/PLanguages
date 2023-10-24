@@ -6,14 +6,30 @@ public class tictactoe
     {
         Screen screen = new Screen();
         Player players = new Player();
-        GameStatus gameStatus = new GameStatus();
+        Game game = new Game();
         
         screen.initBoard();
 
-        screen.drawBoard(true, 1);
-        players.askInput(players.currentPlayer);
+        while (game.gameCheckWin(game.session) == 0) {
+            int choice = players.askInput(players.currentPlayer);
 
-        gameStatus.gameCheckWin(screen.drawBoard.session);
+            if (game.insertChoice(game.session, choice, players.currentPlayer) == 1) {
+                System.out.println("Invalid input! Restart the game to try again.");
+                break;
+            }
+
+            screen.drawBoard(game.session);
+        }
+
+        if (game.gameCheckWin(game.session) == 1)
+            System.out.println("Player 1 wins!");
+        
+        if (game.gameCheckWin(game.session) == 2)
+            System.out.println("Player 2 wins!");
+
+        if (game.gameCheckWin(game.session) == 3)
+            System.out.println("Tie!");
+
     }
 }
 
@@ -34,8 +50,8 @@ class Player
      */
     public int askInput (String player)
     {
-        player = (player == player1) ? "1" : "2";
-        System.out.printf("Input your choice, player %d [1-9]: ", player);
+        player = (player == player1) ? "1 (o)" : "2 (x)";
+        System.out.printf("Input your choice, player %s [1-9]: ", player);
 
         Scanner input = new Scanner(System.in);
         int choice = input.nextInt();
@@ -45,75 +61,68 @@ class Player
     }
 }
 
-class GameStatus
+class Game
 {
-    public void gameCheckWin (String[] session)
+    public String[] session = { "1", "2", "3"
+                              , "4", "5", "6" 
+                              , "7", "8", "9" };
+    public int moves = 0;
+
+    public int insertChoice (String[] cell, int choice, String player)
+    {
+        // check if a move has already been done in a cell
+        if (cell[choice - 1] == "x" || cell[choice - 1] == "o") {
+            return 1;
+        }
+        else {
+            cell[choice - 1] = player;
+            moves++;
+            return 0;
+        }
+    }
+
+    public int gameCheckWin (String[] session)
     {
 
         // Player 1 winning conditions
-        if (session[0] == "x" && session[1] == "x" && session[2] == "x") {
-            System.out.println("Player 1 wins!");
-            return;
-        }
-        else if (session[0] == "x" && session[4] == "x" && session[8] == "x") {
-            System.out.println("Player 1 wins!");
-            return;
-        } 
-        else if (session[2] == "x" && session[4] == "x" && session[6] == "x") {
-            System.out.println("Player 1 wins!");
-            return;
-        } 
-        else if (session[3] == "x" && session[4] == "x" && session[5] == "x") {
-            System.out.println("Player 1 wins!");
-            return;
-        } 
-        else if (session[6] == "x" && session[7] == "x" && session[8] == "x") {
-            System.out.println("Player 1 wins!");
-            return;
-        } 
-        else if (session[0] == "x" && session[3] == "x" && session[6] == "x") {
-            System.out.println("Player 1 wins!");
-            return;
-        } 
-        else if (session[2] == "x" && session[5] == "x" && session[8] == "x") {
-            System.out.println("Player 1 wins!");
-            return;
-        } 
+        if (session[0] == "o" && session[1] == "o" && session[2] == "o")
+            return 1;
+        else if (session[0] == "o" && session[4] == "o" && session[8] == "o")
+            return 1;
+        else if (session[2] == "o" && session[4] == "o" && session[6] == "o")
+            return 1;
+        else if (session[3] == "o" && session[4] == "o" && session[5] == "o")
+            return 1;
+        else if (session[6] == "o" && session[7] == "o" && session[8] == "o")
+            return 1;
+        else if (session[0] == "o" && session[3] == "o" && session[6] == "o")
+            return 1;
+        else if (session[2] == "o" && session[5] == "o" && session[8] == "o")
+            return 1;
 
         // Player 2 winning conditions
-        else if (session[0] == "o" && session[1] == "o" && session[2] == "o") {
-            System.out.println("Player 2 wins!");
-            return;
-        }
-        else if (session[0] == "o" && session[4] == "o" && session[8] == "o") {
-            System.out.println("Player 2 wins!");
-            return;
-        } 
-        else if (session[2] == "o" && session[4] == "o" && session[6] == "o") {
-            System.out.println("Player 2 wins!");
-            return;
-        } 
-        else if (session[3] == "o" && session[4] == "o" && session[5] == "o") {
-            System.out.println("Player 2 wins!");
-            return;
-        } 
-        else if (session[6] == "o" && session[7] == "o" && session[8] == "o") {
-            System.out.println("Player 2 wins!");
-            return;
-        } 
-        else if (session[0] == "o" && session[3] == "o" && session[6] == "o") {
-            System.out.println("Player 2 wins!");
-            return;
-        } 
-        else if (session[2] == "o" && session[5] == "o" && session[8] == "o") {
-            System.out.println("Player 2 wins!");
-            return;
-        } 
-    
-        else {
-            System.out.println("error: Wrong input.");
-            return;
-        }
+        else if (session[0] == "x" && session[1] == "x" && session[2] == "x")
+            return 2;
+        else if (session[0] == "x" && session[4] == "x" && session[8] == "x")
+            return 2;
+        else if (session[2] == "x" && session[4] == "x" && session[6] == "x") 
+            return 2;
+        else if (session[3] == "x" && session[4] == "x" && session[5] == "x") 
+            return 2;
+        else if (session[6] == "x" && session[7] == "x" && session[8] == "x") 
+            return 2;
+        else if (session[0] == "x" && session[3] == "x" && session[6] == "x") 
+            return 2;
+        else if (session[2] == "x" && session[5] == "x" && session[8] == "x") 
+            return 2; 
+
+        // tie condition
+        else if (moves >= 9)
+            return 3;
+
+        else 
+            return 0;
+        
     }
 }
 
@@ -123,18 +132,19 @@ class Screen
     {
         System.out.printf("|-----|-----|-----|\n");
         System.out.printf("|     |     |     |\n");
-        System.out.printf("|     |     |     |\n");
-        System.out.printf("|     |     |     |\n");
-        System.out.printf("|-----|-----|-----|\n");
-        System.out.printf("|     |     |     |\n");
-        System.out.printf("|     |     |     |\n");
+        System.out.printf("|  1  |  2  |  3  |\n");
         System.out.printf("|     |     |     |\n");
         System.out.printf("|-----|-----|-----|\n");
         System.out.printf("|     |     |     |\n");
+        System.out.printf("|  4  |  5  |  6  |\n");
         System.out.printf("|     |     |     |\n");
+        System.out.printf("|-----|-----|-----|\n");
+        System.out.printf("|     |     |     |\n");
+        System.out.printf("|  7  |  8  |  9  |\n");
         System.out.printf("|     |     |     |\n");
         System.out.printf("|-----|-----|-----|\n");
     }
+
     /*
         Draws the TicTacToe screen, using printf.
         This will also print out the current status of the game.
@@ -153,16 +163,12 @@ class Screen
         |     |     |     |
         |-----|-----|-----|
     
-        In numbers 1-9, the player can choose which of these spots 
-        that they can place their O or X at, and with the use of
-        printf, print their input into one of these numbers.
+        In numbers 1-9, the player can choose which of these cells 
+        that they can place their O or X at.
+        Using printf, print their input into one of these cells.
     */
-    public void drawBoard (boolean player, int choice)
+    public void drawBoard (String[] session)
     {
-        String[] session = { " ", " ", " "
-                           , " ", " ", " "
-                           , " ", " ", " "};
-
         System.out.printf("|-----|-----|-----|\n");
         System.out.printf("|     |     |     |\n");
         System.out.printf("|  %s  |  %s  |  %s  |\n", session[0], session[1], session[2]);
