@@ -7,7 +7,7 @@ public class employeeWorkHours
     {
         Scanner input = new Scanner(System.in);
 
-        System.out.printf("Would you like to choose a predefined set of 8 employees' work hours? [y/n]: ");
+        System.out.printf("Would you like to have a predefined set of 8 employees' work hours? [y/n]: ");
         String preset = input.nextLine();
 
         int[][] workHours;
