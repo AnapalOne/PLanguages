@@ -69,6 +69,7 @@ class Player
         int choice = input.nextInt();
 
         switchPlayer();
+        input.close();
         return choice;
     }
 }

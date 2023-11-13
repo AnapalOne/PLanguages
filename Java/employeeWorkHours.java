@@ -36,6 +36,7 @@ public class employeeWorkHours
                 }
             }
         }
+        input.close();
 
         int hourSum = 0;
 

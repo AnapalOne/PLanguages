@@ -98,8 +98,10 @@ public class ph_ProvincesQuiz
         Scanner input = new Scanner(System.in);
         String prompt = input.nextLine();
 
-        if (!prompt.equalsIgnoreCase("y"))
+        if (!prompt.equalsIgnoreCase("y")) {
+            input.close();
             return;
+        }
 
         ArrayList<Integer> numbers = new ArrayList<Integer>();
         for (int i = 0; i < list.length; i++) 
@@ -126,5 +128,6 @@ public class ph_ProvincesQuiz
         }
 
         System.out.printf("Your score is %d/81.\n", score);
+        input.close();
     }
 }
