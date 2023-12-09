@@ -9,6 +9,6 @@ while i < 10:
     num = int(input("Input a number: "))
     sum = sum + num
     product = product * num
-    i = i + 1
+    i += 1
 
 print("\nThe sum of all numbers are:",sum,"\nThe product of all numbers are:",product)
